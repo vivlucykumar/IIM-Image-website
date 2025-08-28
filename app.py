@@ -66,10 +66,7 @@ else:
             if i % COLS_PER_ROW == 0:
                 cols = st.columns(COLS_PER_ROW)
             with cols[i % COLS_PER_ROW]:
-                st.image(image_path, use_column_width=True)
+                st.image(image_path, use_container_width=True)
                 st.caption(os.path.basename(image_path))
 
-# --- Requirements file content for Streamlit Cloud ---
-# We will create a requirements.txt file with the following content:
-# streamlit
-# It's important to list all libraries your app depends on.
+
